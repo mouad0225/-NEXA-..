@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="亗NEXA亗 - شبكة اجتماعية للتواصل مع الأصدقاء الحقيقيين">
+<title>亗NEXA亗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="logo">亗NEXA亗</div>
+  <div class="online"><span></span><strong id="onlineCount">128</strong> متصل الآن</div>
+  <button id="themeBtn">🌙 الوضع الداكن</button>
+</header>
+
+<nav class="tabs">
+  <button class="active" data-page="home">الرئيسية</button>
+  <button data-page="friends">الأصدقاء</button>
+  <button data-page="chat">المحادثة</button>
+  <button data-page="profile">ملفي</button>
+</nav>
+
+<main>
+<section id="home" class="page active">
+  <div class="hero">
+    <div>
+      <small>شبكتك الاجتماعية</small>
+      <h1>تواصل مع أصدقائك الحقيقيين أينما كانوا.</h1>
+      <p>亗NEXA亗 يجمع المنشورات والصور والفيديوهات والمحادثات في مكان واحد.</p>
+    </div>
+    <div class="sync">☁️<b> المزامنة</b><small>متصلة</small></div>
+  </div>
+
+  <div class="composer">
+    <div class="avatar">N</div>
+    <input id="postInput" placeholder="ماذا تريد أن تنشر؟">
+    <button id="publish">نشر</button>
+  </div>
+
+  <div id="feed">
+    <article class="post">
+      <div class="postHead"><div class="avatar blue">M</div><div><b>مُعاد</b><small>منذ 5 دقائق · 🟢 متصل</small></div></div>
+      <p>مرحباً 👋 هذا أول منشور في 亗NEXA亗!</p>
+      <div class="media">▶️ فيديو تجريبي</div>
+      <div class="actions"><button class="like">♡ إعجاب <b>12</b></button><button>💬 4</button><button>↗ مشاركة</button></div>
+    </article>
+    <article class="post">
+      <div class="postHead"><div class="avatar pink">A</div><div><b>أحمد</b><small>منذ 18 دقيقة</small></div></div>
+      <p>تم حفظ مستوى المشاهدة: 72% — ويمكن مزامنته مع حسابك عند الاتصال بالخادم.</p>
+      <div class="progress"><i style="width:72%"></i></div>
+      <div class="actions"><button class="like">♡ إعجاب <b>8</b></button><button>💬 2</button></div>
+    </article>
+  </div>
+</section>
+
+<section id="friends" class="page">
+  <h2>الأصدقاء الحقيقيون</h2>
+  <div class="friendGrid">
+    <div class="friend"><div class="avatar blue">M</div><b>مُعاد</b><small>🟢 متصل الآن</small><button>💬 مراسلة</button></div>
+    <div class="friend"><div class="avatar pink">A</div><b>أحمد</b><small>🟢 متصل الآن</small><button>💬 مراسلة</button></div>
+    <div class="friend"><div class="avatar green">Y</div><b>يوسف</b><small>⚪ غير متصل</small><button>إضافة</button></div>
+  </div>
+</section>
+
+<section id="chat" class="page">
+  <h2>المحادثة</h2>
+  <div class="chatbox">
+    <div class="messages" id="messages">
+      <div class="msg other">أهلاً! هل أنت متصل؟</div>
+      <div class="msg me">نعم، أنا هنا 👋</div>
+    </div>
+    <div class="chatInput"><input id="msgInput" placeholder="اكتب رسالة..."><button id="send">إرسال</button></div>
+  </div>
+</section>
+
+<section id="profile" class="page">
+  <div class="profile">
+    <div class="avatar big">N</div>
+    <h2>مستخدم NEXA</h2><p>@nexa_user</p>
+    <div class="stats"><b>24<br><small>منشور</small></b><b>138<br><small>صديق</small></b><b>1.2K<br><small>إعجاب</small></b></div>
+  </div>
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
